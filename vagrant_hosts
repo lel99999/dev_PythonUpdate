@@ -1,3 +1,4 @@
 [linuxhosts]
+pythonUpdCentOS6 ansible_host=192.168.60.145 
 pythonUpdRH7 ansible_host=192.168.60.146 
 
