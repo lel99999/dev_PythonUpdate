@@ -14,10 +14,10 @@ Vagrant.configure("2") do |config|
   config.vm.define "pythonUpdRH7" do |pythonUpdRH7|
     pythonUpdRH7.vm.box = "RH7.5_baserepo"
     pythonUpdRH7.vm.hostname = "pythonUpdRH7"
-    pythonUpdRH7.vm.network "private_network", ip: "192.168.60.144"
-    pythonUpdRH7.vm.provision "shell", :inline => "sudo echo '192.168.60.144 pythonUpdRH7.local pythonUpdRH7' >> /etc/hosts"
+    pythonUpdRH7.vm.network "private_network", ip: "192.168.60.146"
+    pythonUpdRH7.vm.provision "shell", :inline => "sudo echo '192.168.60.146 pythonUpdRH7.local pythonUpdRH7' >> /etc/hosts"
     pythonUpdRH7.vm.provision "ansible" do |ansible|
-      ansible.playbook = "deploy_pythonUpdRH7.yml"
+      ansible.playbook = "deploy_pythonUpd.yml"
       ansible.inventory_path = "vagrant_hosts"
       #ansible.tags = ansible_tags
       #ansible.verbose = ansible_verbosity

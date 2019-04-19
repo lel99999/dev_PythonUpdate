@@ -1,3 +1,3 @@
 [linuxhosts]
-pythonUpdRH7 ansible_host=192.168.60.144 
+pythonUpdRH7 ansible_host=192.168.60.146 
 
